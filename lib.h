@@ -1,8 +1,6 @@
-#ifndef PROGRAMMI_LIB_H
-#define PROGRAMMI_LIB_H
+#ifndef ESERCITAZIONE6_LIB_H
+#define ESERCITAZIONE6_LIB_H
 
-int potenza(int);
-int potenza(int, int);
-int fattoriale(int);
+int primo (int, int);
 
-#endif
+#endif //ESERCITAZIONE6_LIB_H
