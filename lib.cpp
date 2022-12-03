@@ -1,14 +1,16 @@
 #include "lib.h"
-using namespace std;
 
-bool primo(int numero, int i) {
-  int resto=numero%i;
-  
-  if(numero<=i)return true;
-  if(resto==0&&i>1)return false;
-  if(resto!=0) {
-    i++;
-    primo(numero, i);
-  }
-  else return true; 
+int primo(int a, int b) {
+    bool x=true;
+    if (b!=1){
+        if ((a % b ) != 0) {
+            b--;
+            x = primo(a, b);
+        } else {
+            x=false;
+        }
+    } else {
+        x=true;
+    }
+    return x;
 }
